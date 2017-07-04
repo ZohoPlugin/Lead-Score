@@ -1,0 +1,9 @@
+map=map();
+  leadId = input.lead.get("Leads.ID");
+   info leadId;
+  lead_details = zoho.crm.getRecordById("Leads", leadId.toLong());
+   country = lead_details.get("Country");
+   if(country == "USA") {           
+   map.put("Leads Score",2);
+   response_details = zoho.crm.updateRecord("Leads", leadId, map);
+ } 
