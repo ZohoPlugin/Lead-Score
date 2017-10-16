@@ -1,2 +1,2 @@
-# Lead-Score
+# Leads-Score
 Code snippet for Lead score extension
